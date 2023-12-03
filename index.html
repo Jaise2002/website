@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="contact-form-04\contact-form-04\index.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="contact-form-04\contact-form-04\index.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="coat.jpg" alt="Jaise George profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Jaise George</h1>
+        <p class="section_text_p2">Data Scientist | student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Jaise George CV.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- <button class="btn btn-color-1"> -->
+           <a href="contact-form-04\contact-form-04\index.html"><button class="btn btn-color-1"> Contact Info</button></a> 
+          <!-- </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+            src="LINKDIN.jpg"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="git.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+          <img
+            src="19724-middle.png"
+            alt="My insta profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/_jaise_george?igshid=NzZlODBkYWE4Ng=='"
+        >
+      </div>
+    </section>
+        <!-- about section   -->
+        <section class="about section" id="about">
+            <h2 class="section_title"> About Me </h2>
+            
+            <div class="about_container container grid">
+                <div class="about_img">
+                    <img src="739A1254-removebg.png" alt="" style="height: 500px;"> 
+                </div>
+                <div class="about_content">
+                    <h1>JAISE GEORGE</h1>
+                    <p>A young data science enthusiast who wants to explore the deep ocean of data
+                        science.Throughout my academic and professional career, I have gained experience in
+                        various programming languages such as Python, R, Excel and SQL. I have also worked
+                        with various data analytics and machine learning tools such as Pandas, NumPy and
+                        Matplotlib.In my free time, I enjoy exploring new technologies and expanding my
+                        knowledge in data science. </p>
+                    <!-- <div class="about_info">
+                        <div>
+                            <span class="number">200</span>
+                            <br>
+                            <span class="text">completed<br>projects</span>
+                        </div>
+                        <div>
+                            <span class="number">120</span>
+                            <br>
+                            <span class="text">positive<br>reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Education section  -->
+
+        <section class="about section" id="education">
+            <h2 class="section_title"> EDUCATION </h2>
+
+            <div class="resume_container container grid">
+                <div class="resume_tabs">
+                    
+                </div>
+                <div class="resume_content">
+                    <div id="page-1" class="page one">
+                        <div class="page_heading">Education</div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+
+                            </div>
+                            <div class="resume_wrap-content">
+                                    <span class="date">2023-2025</span>
+                                    <h4>MSc Data Science</h4>
+                                    <span class="position">CHRIST(Deemed To be University),Pune,Lavasa</span>
+                                    <p>
+                                            <LI>Currently pursuing</LI>
+                                    </p>
+
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+
+                            </div>
+                            <div class="resume_wrap-content">
+                                    <span class="date">2020-2023</span>
+                                    <h4>BSc Mathematics</h4>
+                                    <span class="position"> Mahatma Gandhi College,Iritty,Kannur
+                                    </span>
+                                    
+                                        <li>Graduated with a CGPA of 9.011</li> 
+                                        <li>Mock Parliament Department Representative</li>
+                                        <li>Member of National Service Scheme</li>
+
+                                    </p>
+
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+
+                            </div>
+                            <div class="resume_wrap-content">
+                                    <span class="date">2018-2020</span>
+                                    <h4>Higher Secondary</h4>
+                                    <span class="position">State Board</span>
+                                    <p> St Marys HSS Edoor
+                                        <li>Graduated with 97.25%</li>
+                                        <li>Member of kerala State Bharat Scout and Guides</li>
+
+                                    </p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="skills" class="page two">
+                        
+                        <h2 class="section_title"> Skills </h2>
+                        
+                        <div class="progressBox grid">
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>HTML</span>
+                                    <span>90%</span>
+                                    
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 90%;"></div>
+
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>CSS</span>
+                                    <span>80%</span>
+                                    
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 80%;"></div>
+
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>JAVA SCRIPT</span>
+                                    <span>70%</span>
+                                    
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 70%;"></div>
+
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>PYTHON</span>
+                                    <span>85%</span>
+                                    
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 85%;"></div>
+
+                                </div>
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>GIT-HUB</span>
+                                    <span>89%</span>
+                                    
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 89%;"></div>
+
+                                </div>
+                                
+                            </div>
+                            <div class="progressBox">
+                                <div class="progress_name">
+                                    <span>R</span>
+                                    <span>75%</span>
+                                    
+                                </div>
+                                <div class="progress">
+                                    <div class="progress_bar" style="width: 75%;"></div>
+
+                        </div>
+                        </div>
+                        <div class="progressBox">
+                            <div class="progress_name">
+                                <span>Django</span>
+                                <span>70%</span>
+                                
+                            </div>
+                            <div class="progress">
+                                <div class="progress_bar" style="width: 70%;"></div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="progressBox">
+                    <div class="progress_name">
+                        <span>Excel</span>
+                        <span>85%</span>
+                        
+                    </div>
+                    <div class="progress">
+                        <div class="progress_bar" style="width: 85%;"></div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+   <!-- ionicons -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- main script -->
+
+
+    <script src="design.js"></script>
+
+</body>
+
+</html>
